@@ -1,0 +1,5 @@
+{{ template "header.tmpl" .}}
+
+    <form action="{{.result_url}}" class="paymentWidgets" data-brands="VISA MASTER AMEX"></form>
+    <script src="https://eu-test.oppwa.com/v1/paymentWidgets.js?checkoutId={{.payment.CheckoutID}}:"></script> 
+{{ template "footer.tmpl" .}}
